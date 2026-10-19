@@ -1,0 +1,25 @@
+class Shape{
+        draw(){
+            return "Im a generic shape"
+        }
+}
+class Square extends Shape{
+        draw(){
+            return "Im a square"
+        }
+}
+
+class circle extends Shape{
+        draw(){
+            return "Im a generic cicle"
+        }
+}
+
+let s = new Shape();
+console.log(s.draw());
+
+s=new Square();
+console.log(s.draw());
+
+s=new circle();
+console.log(s.draw());

@@ -1,7 +1,13 @@
-document.getElementById("demo1").innerHTML="This is Dynamic text message"
-        document.getElementById("demo2").innerHTML="Hello ! JavaScript"
-        document.getElementById("myBtn").onclick=displayDate;
 
-        function displayDate(){
-            document.getElementById("mydate").innerHTML=Date()
-        }
+
+function showtime(){
+    let date=new Date();
+    let h=date.getDate();
+    let m=date.getMinutes();
+    let s=date.getSeconds();
+
+    let time=h+":"+m+":"+s;
+    document.getElementById("dc").innerHTML=time;
+    setTimeout(showtime,1000);
+}
+showtime();

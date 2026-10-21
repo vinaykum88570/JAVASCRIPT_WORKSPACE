@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>querySelectorAll Example</title>  
+  <style>  
+    .highlight {  
+      font-weight: bold;  
+      color: blue;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <h2 class="highlight">Heading One</h2>  
+  <h2 class="highlight">Heading Two</h2>  
+  <h2>Heading Three</h2>  
+  <script>  
+   const elements = document.querySelectorAll('.highlight');  
+   elements.forEach((element) => {  
+  element.style.color = 'red';  
+    });  
+  </script>  
+</body>  
+</html>  
